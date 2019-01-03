@@ -1,0 +1,309 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A22ADCD-E961-4A34-B4DD-0325A2DDC79B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HaliSahaUygulamasi</RootNamespace>
+    <AssemblyName>HaliSahaUygulamasi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminTemplate\charts.html" />
+    <Content Include="AdminTemplate\css\bootstrap-table.css" />
+    <Content Include="AdminTemplate\css\bootstrap-theme.css" />
+    <Content Include="AdminTemplate\css\bootstrap-theme.min.css" />
+    <Content Include="AdminTemplate\css\bootstrap.css" />
+    <Content Include="AdminTemplate\css\bootstrap.min.css" />
+    <Content Include="AdminTemplate\css\datepicker.css" />
+    <Content Include="AdminTemplate\css\datepicker3.css" />
+    <Content Include="AdminTemplate\css\font-awesome.min.css" />
+    <Content Include="AdminTemplate\css\styles.css" />
+    <Content Include="AdminTemplate\elements.html" />
+    <Content Include="AdminTemplate\fonts\fontawesome-webfont.svg" />
+    <Content Include="AdminTemplate\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="AdminTemplate\index.html" />
+    <Content Include="AdminTemplate\js\bootstrap-datepicker.js" />
+    <Content Include="AdminTemplate\js\bootstrap.js" />
+    <Content Include="AdminTemplate\js\bootstrap.min.js" />
+    <Content Include="AdminTemplate\js\chart-data.js" />
+    <Content Include="AdminTemplate\js\chart.min.js" />
+    <Content Include="AdminTemplate\js\custom.js" />
+    <Content Include="AdminTemplate\js\easypiechart-data.js" />
+    <Content Include="AdminTemplate\js\easypiechart.js" />
+    <Content Include="AdminTemplate\js\html5shiv.min.js" />
+    <Content Include="AdminTemplate\js\jquery-1.11.1.min.js" />
+    <Content Include="AdminTemplate\js\lumino.glyphs.js" />
+    <Content Include="AdminTemplate\js\npm.js" />
+    <Content Include="AdminTemplate\js\respond.min.js" />
+    <Content Include="AdminTemplate\login.html" />
+    <Content Include="AdminTemplate\panels.html" />
+    <Content Include="AdminTemplate\widgets.html" />
+    <None Include="Connected Services\ServiceReference1\WebService1.disco" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Profil.aspx" />
+    <Content Include="SahaEkle.aspx" />
+    <Content Include="SahaListesi.aspx" />
+    <Content Include="UyeTemplate\images\demo\120x120.gif" />
+    <Content Include="UyeTemplate\images\demo\220x95.gif" />
+    <Content Include="UyeTemplate\images\demo\80x80.gif" />
+    <Content Include="UyeTemplate\images\demo\avatar.png" />
+    <Content Include="UyeTemplate\images\demo\gallery\1.png" />
+    <Content Include="UyeTemplate\images\demo\gallery\index.html" />
+    <Content Include="UyeTemplate\images\demo\index.html" />
+    <Content Include="UyeTemplate\images\demo\portfolio\1.png" />
+    <Content Include="UyeTemplate\images\demo\portfolio\index.html" />
+    <Content Include="UyeTemplate\images\demo\slider\1.png" />
+    <Content Include="UyeTemplate\images\demo\slider\2.png" />
+    <Content Include="UyeTemplate\images\demo\slider\3.png" />
+    <Content Include="UyeTemplate\images\demo\slider\4.png" />
+    <Content Include="UyeTemplate\images\demo\slider\5.png" />
+    <Content Include="UyeTemplate\images\demo\slider\index.html" />
+    <Content Include="UyeTemplate\images\demo\video.gif" />
+    <Content Include="UyeTemplate\images\demo\worldmap.png" />
+    <Content Include="UyeTemplate\images\index.html" />
+    <Content Include="UyeTemplate\index.html" />
+    <Content Include="UyeTemplate\layout\index.html" />
+    <Content Include="UyeTemplate\layout\scripts\index.html" />
+    <Content Include="UyeTemplate\layout\scripts\jquery.fitvids.min.js" />
+    <Content Include="UyeTemplate\layout\scripts\jquery.min.js" />
+    <Content Include="UyeTemplate\layout\scripts\jquery.mobilemenu.js" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\images\close%402x.png" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\images\close.png" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\images\index.html" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\images\loading%402x.gif" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\images\loading.gif" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\images\next%402x.png" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\images\next.png" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\images\prev%402x.png" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\images\prev.png" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\index.html" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\nivo-lightbox.min.css" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\nivo-lightbox.min.js" />
+    <Content Include="UyeTemplate\layout\scripts\tabslet\index.html" />
+    <Content Include="UyeTemplate\layout\scripts\tabslet\jquery.tabslet.min.js" />
+    <Content Include="UyeTemplate\layout\styles\fontawesome-4.2.0.min.css" />
+    <Content Include="UyeTemplate\layout\styles\fonts\fontawesome-webfont.svg" />
+    <Content Include="UyeTemplate\layout\styles\fonts\index.html" />
+    <Content Include="UyeTemplate\layout\styles\framework.css" />
+    <Content Include="UyeTemplate\layout\styles\index.html" />
+    <Content Include="UyeTemplate\layout\styles\layout.css" />
+    <Content Include="UyeTemplate\licence.txt" />
+    <Content Include="UyeTemplate\pages\basic-grid.html" />
+    <Content Include="UyeTemplate\pages\full-width.html" />
+    <Content Include="UyeTemplate\pages\gallery.html" />
+    <Content Include="UyeTemplate\pages\index.html" />
+    <Content Include="UyeTemplate\pages\portfolio.html" />
+    <Content Include="UyeTemplate\pages\sidebar-left-2.html" />
+    <Content Include="UyeTemplate\pages\sidebar-left.html" />
+    <Content Include="UyeTemplate\pages\sidebar-right-2.html" />
+    <Content Include="UyeTemplate\pages\sidebar-right.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.aspx.cs">
+      <DependentUpon>Profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profil.aspx.designer.cs">
+      <DependentUpon>Profil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SahaEkle.aspx.cs">
+      <DependentUpon>SahaEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SahaEkle.aspx.designer.cs">
+      <DependentUpon>SahaEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SahaListesi.aspx.cs">
+      <DependentUpon>SahaListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SahaListesi.aspx.designer.cs">
+      <DependentUpon>SahaListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.Master" />
+    <Content Include="AdminTemplate\css\bootstrap-theme.css.map" />
+    <Content Include="AdminTemplate\css\bootstrap-theme.min.css.map" />
+    <Content Include="AdminTemplate\css\bootstrap.css.map" />
+    <Content Include="AdminTemplate\css\bootstrap.min.css.map" />
+    <Content Include="AdminTemplate\fonts\fontawesome-webfont.eot" />
+    <Content Include="AdminTemplate\fonts\fontawesome-webfont.ttf" />
+    <Content Include="AdminTemplate\fonts\fontawesome-webfont.woff" />
+    <Content Include="AdminTemplate\fonts\fontawesome-webfont.woff2" />
+    <Content Include="AdminTemplate\fonts\FontAwesome.otf" />
+    <Content Include="AdminTemplate\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="AdminTemplate\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="AdminTemplate\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="AdminTemplate\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="AdminTemplate\sass\.sass-cache\deff34d1f5b7167181b556002c25068d6adc024d\styles.scssc" />
+    <Content Include="AdminTemplate\sass\styles.scss" />
+    <Content Include="AdminTemplate\tables\data1.json" />
+    <Content Include="AdminTemplate\tables\data2.json" />
+    <None Include="Connected Services\ServiceReference1\WebService1.wsdl" />
+    <None Include="packages.config" />
+    <Content Include="UyeTemplate\layout\scripts\nivo-lightbox\Nivo-Lightbox-master.zip" />
+    <Content Include="UyeTemplate\layout\scripts\tabslet\Tabslet-master.zip" />
+    <Content Include="UyeTemplate\layout\styles\fonts\fontawesome-webfont.eot" />
+    <Content Include="UyeTemplate\layout\styles\fonts\fontawesome-webfont.ttf" />
+    <Content Include="UyeTemplate\layout\styles\fonts\fontawesome-webfont.woff" />
+    <Content Include="UyeTemplate\layout\styles\fonts\FontAwesome.otf" />
+    <Content Include="Site.Master" />
+    <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53686</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53686/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
