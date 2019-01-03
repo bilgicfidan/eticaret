@@ -22,7 +22,7 @@
             <td>
             <asp:DropDownList ID="ddlil" runat="server" text='<%#Eval("ilAd") %>'></asp:DropDownList></td>
             <td>
-                <asp:LinkButton Text="Güncelle" runat="server" CommandName="Update"/></td>
+                <asp:LinkButton Text="Güncelle aaaa" runat="server" CommandName="Update"/></td>
             <td>
                 <asp:LinkButton Text="İptal" runat="server" CommandName="Cancel" /></td>
         </EditItemTemplate>
