@@ -54,3 +54,5 @@ C:\Users\Fidan\source\repos\HaliSahaUygulamasi\HaliSahaUygulamasi\obj\Debug\Hali
 C:\Users\Fidan\source\repos\HaliSahaUygulamasi\HaliSahaUygulamasi\obj\Debug\HaliSahaUygulamasi.csproj.CopyComplete
 C:\Users\Fidan\source\repos\HaliSahaUygulamasi\HaliSahaUygulamasi\obj\Debug\HaliSahaUygulamasi.dll
 C:\Users\Fidan\source\repos\HaliSahaUygulamasi\HaliSahaUygulamasi\obj\Debug\HaliSahaUygulamasi.pdb
+C:\Users\Fidan\Documents\GitHub\eticaret\HaliSahaUygulamasi\obj\Debug\HaliSahaUygulamasi.dll
+C:\Users\Fidan\Documents\GitHub\eticaret\HaliSahaUygulamasi\obj\Debug\HaliSahaUygulamasi.pdb
